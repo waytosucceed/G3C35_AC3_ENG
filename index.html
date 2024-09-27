@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Class Activity 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+
+  <style>
+    .activity {
+      width: 100%;
+      height: auto;
+      background-color: rgb(156, 225, 247);
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+      border-radius: 2px;
+    }
+
+    .activity p {
+      font-size: 50px;
+    }
+
+    #img-area {
+      width: 40%;
+    }
+
+    #content-area {
+      width: 60%;
+    }
+
+    #heading {
+      font-family: Harrington;
+      font-size: 40px;
+      font-weight: bolder;
+      color: maroon;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      padding: 12px;
+      font-size: 29px;
+    }
+    .modal{
+      width: 100%;
+    }
+
+    .modal-body {
+      font-size: 1.5rem;
+    }
+    .modal-dialog {
+        max-width: 900px; /* Adjust the width as needed */
+    }
+    .revision{
+      .btn {
+            background: linear-gradient(135deg, #96C9F4, #5B9BD5); /* Light blue gradient */
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+                        -5px -5px 15px rgba(255, 255, 255, 0.5);
+            color: white; /* White text for contrast */
+            font-weight: bold;
+            padding: 12px 20px; /* Added padding for a larger button */
+            font-size: 16px; /* Increased font size */
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), 
+                        -2px -2px 10px rgba(255, 255, 255, 0.7);
+            transform: translateY(-3px); /* Lift effect on hover */
+        }
+        .btn:active {
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 
+                        inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+            transform: translateY(2px); /* Pressed effect */
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="cheers">
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px; padding-left: 10px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+  <br>
+  <p></p>
+
+  <div class="revision" style="display: flex; gap: 10px; justify-content: center;">
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#simpleFutureModal">Simple Future
+      Tense</button>
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#FutureContinuousModal">Future Continuous
+      Tense</button>
+  </div>
+  <br>
+  <center>
+    <h1 id="heading">Future Perfect Tense</h1> 
+  </center>
+  <div class="container">
+    <div class="row">
+        <!-- Articles Content -->
+        <div class="col-md-12" style="font-size: 24px">
+            <p>
+                The future perfect tense is used to talk about something that will be finished or completed before another time in the future. It helps us know that something will happen before a certain point in the future.
+            </p>
+            <b>Rule:</b> Subject + Helping verbs (will + have) + Past participle form of the main verb + the rest of the sentence.
+            <p></p>
+            <div style="background: #96C9F4; padding: 0.5rem; border-radius: 1rem;">
+              👉 We use "will have" for all subjects (I, you, he, she, it, we, they).<br>
+              <b>Examples:</b><br>
+              <div>
+                <li><b>By next week, I will have finished reading this book.</b></li>
+                <li><b>They will have completed their homework before dinner.</b></li>
+                <li><b>By the time the movie starts, we will have arrived at the theatre.</b></li>
+              </div>
+            </div>
+            <p>These sentences show that certain actions will be completed before a specified time in the future.</p>
+        </div>
+    </div>
+    <p></p>
+    <div class="container text-center">
+        <a href="index2.html" class="btn btn-primary mb-5 btn-lg text-center" style="height: 50px; width: 200px; font-size: 22px;">Keynote</a>
+    </div>
+</div>
+
+
+
+<!-- Simple Future Tense Modal -->
+<div class="modal fade" id="simpleFutureModal" tabindex="-1" aria-labelledby="simpleFutureModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="simpleFutureModalLabel">Simple Future Tense:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              The simple future tense is used to describe actions that will happen at a specific time in the future. It is often used to make predictions, express intentions, or indicate scheduled events.
+              <br><br>
+              <b>Rule:</b> Subject + will + base form of the verb + rest of the sentence.
+              <br><br>
+              <b>Examples:</b>
+              <br> "It will rain tomorrow."
+              <br> "I will study for the exam tonight."
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Future Continuous Tense Modal -->
+<div class="modal fade" id="FutureContinuousModal" tabindex="-1" aria-labelledby="FutureContinuousModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="FutureContinuousModalLabel">Future Continuous Tense</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              The future continuous tense describes actions that will be ongoing at a specific point in the future. It is used to indicate that an action will be in progress at a certain time.
+              <br><br>
+              <b>Rule:</b> Subject + will be + present participle (verb + ing) + rest of the sentence.
+              <br><br>
+              <b>Examples:</b>
+              <br> "At 8 PM tonight, I will be watching my favourite show."
+              <br> "When you arrive, she will be studying in the library."
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
